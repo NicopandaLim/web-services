@@ -1,0 +1,10 @@
+<h2> History Search</h2>
+
+<ul *ngFor="let record of searches">
+        <li><div>{{record.searchText}}</div> 
+            <div>{{record.createdAt}}</div>
+        </li>
+      </ul> 
+
+<!-- <p><a href (click)="back()">Back</a></p>  -->  
+<p><a [routerLink]="['/']">Back</a></p>

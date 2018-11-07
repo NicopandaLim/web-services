@@ -6,22 +6,42 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## DONE:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+PART - 1
+[ ]add a link to app component that navigates to a searchHistory component. be sure to
+      include a route for the searchHistory component
 
-## Build
+[ ]the search history component should include a link to navigate back to the app
+      component when clicked
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+[ ]EXTRA CREDIT :: include a redirection route to handle redirecting to the app 
+      component in situations where the user types an incorrect ur
 
-## Running unit tests
+PART - 2
+[ ] In the app component bind an input element to capture the users search text
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[ ]Create a service that searches wikipedia for the user search text and returns a promise
+       that displays the results in the app component view. For example, a wiki search of 
+      "dog" returns the text "Dog Dog meat Dogs in warfare Dog behavior …"
 
-## Running end-to-end tests
+[ ]the search history component should display the users search history and a timestamp
+      for each search. There should be a corresponding array storing the users searches
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+PART-3
+[ ]create your own giphy account at the following url 
+      "https://developers.giphy.com/explorer/" . you can login with a facebook
+        account or using your email.
+[ ]use the developers console to generate a query like the following request url for dog giphyus ..... https://api.giphy.com/v1/gifs/search?api_key=[YOUR-API-KEY]&q=dog&limit=5&offset=0&rating=G&lang=en
 
-## Further help
+[ ]create a new service that sends a request to the giphy api using the above
+       url. the returned search results should be a json payload containing giphys 
+       related to the users search text.  The user search text should be added to
+       the api request as the “q” parameter in the above url
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+[ ]in the app component display at least one of the giphy responsem images.    
+                
+[ ]Do this by creating an img element in the app component binding a
+      giphy url to the src attribute of the image element. 
+      
+

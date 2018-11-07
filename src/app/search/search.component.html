@@ -1,0 +1,29 @@
+<div >
+    <span>
+      <input type="text" #searchText placeholder="Enter search text">
+      <button (click)="wikiSearch(searchText.value)">Wiki Search</button>
+    </span>
+    <span style="margin-left:1em">
+        <input type="text" #giphysearch placeholder="Enter search text">
+        <button (click)="giphySearch(giphysearch.value)">Giphy Search</button>
+    </span>
+    </div>
+  <br/>
+
+<div [ngSwitch]="case">
+    <div *ngSwitchCase="1">
+        <div *ngIf="titles">
+          <h3 class="res">Results:</h3>
+          <div class="res">{{titles}}</div>
+      </div>
+      </div>
+    <div *ngSwitchCase="2">
+      <div *ngIf="imgs">
+        <h3 class="res">Giphy Results: </h3>
+        <ul *ngFor="let img of imgs">
+            <li><img class="my-image" [src]=img id="image" style="width:600px;height:500px;"/>
+            </li>
+          </ul> 
+       </div>
+       </div>   
+    </div>

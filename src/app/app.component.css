@@ -1,0 +1,11 @@
+.nav {
+    background-color: rgb(185, 154, 180);
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.pa {
+    color: rgb(185, 154, 180);
+    border-radius: 5px;
+}
