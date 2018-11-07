@@ -9,6 +9,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## DONE:
 
 PART - 1
+
 [ ]add a link to app component that navigates to a searchHistory component. be sure to
       include a route for the searchHistory component
 
@@ -19,6 +20,7 @@ PART - 1
       component in situations where the user types an incorrect ur
 
 PART - 2
+
 [ ] In the app component bind an input element to capture the users search text
 
 [ ]Create a service that searches wikipedia for the user search text and returns a promise
@@ -29,6 +31,7 @@ PART - 2
       for each search. There should be a corresponding array storing the users searches
 
 PART-3
+
 [ ]create your own giphy account at the following url 
       "https://developers.giphy.com/explorer/" . you can login with a facebook
         account or using your email.
